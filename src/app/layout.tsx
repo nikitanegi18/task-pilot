@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { CopilotPanel } from "@/components/features/CopilotPanel";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { ClerkProvider } from "@clerk/nextjs";
+import { AuthSync } from "@/components/providers/AuthSync";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,6 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
+      <AuthSync />
       <html
         lang="en"
         suppressHydrationWarning

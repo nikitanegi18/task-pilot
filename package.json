@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "upload": "git add . && git commit -m \"auto-update\" && git push origin main",
+    "deploy": "npx vercel --prod"
   },
   "dependencies": {
     "@clerk/nextjs": "^7.1.0",

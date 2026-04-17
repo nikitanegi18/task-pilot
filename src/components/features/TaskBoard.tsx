@@ -114,7 +114,6 @@ export function TaskBoard() {
 
   useEffect(() => {
     setMounted(true);
-    useTaskStore.getState().fetchTasks();
   }, []);
 
   if (!mounted) return null;
